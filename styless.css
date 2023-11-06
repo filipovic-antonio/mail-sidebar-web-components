@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.siderbarCointener {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+.bold {
+    font-weight: bold;
+}
+.menuBar {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.hamburger {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gmailImage {
+    margin-top:5px;
+    height: 35px;
+    width: 35px;
+}
+
+.logo {
+    margin-top: 5px;
+    font-size: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mail-app-text {
+    font-size: 24px;
+}
+
+span {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.hamburger:hover {
+    box-shadow: 0 0 10px gray;
+    color: gray;
+}
+
+.hamburger .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 180%;
+    margin-left: -60px;
+}
+
+.hamburger:hover .tooltiptext {
+    opacity: 0.6;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+

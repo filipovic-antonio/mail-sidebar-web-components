@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gmail Sidebar</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="javascript.js" defer ></script>
+</head>
+<body>     
+    <div class="siderbarCointener">
+        <div class="menuBar">
+            <div class="hamburger"><span class="tooltiptext">Main menu</span>&#9776;</div>
+            <div class="logo"><img src="gmail.png" class="gmailImage"></div> 
+            <div class="mail-app-text">Mail App</div>
+    </div>
+    <app-sidebar-button text="Compose">
+        <img slot="icon" src="compose.png" alt="compose logo">
+    </app-sidebar-button>
+
+    <app-sidebar-button text="Inbox">
+        <span slot="icon">📥</span>
+    </app-sidebar-button>
+
+    <app-sidebar-button text="Starred">
+        <span slot="icon">⭐️ </span>
+    </app-sidebar-button>
+
+    <app-sidebar-button text="Snoozed" >
+        <span slot="icon">⏱</span>
+    </app-sidebar-button>
+
+    <app-sidebar-button text="Sent" >
+        <span slot="icon">➡️</span>
+    </app-sidebar-button>
+
+    <app-sidebar-button text="Draft" unreadCount="1">
+        <span slot="icon">📄</span>
+    </app-sidebar-button>
+
+    <template id="app-sidebar-button">
+        <style>
+            .sideBarButton {
+                display:flex;
+                align-items: center;
+                padding-left: 25px;
+                height: 30px;
+            }
+            .sideBarButton:hover {
+                cursor: pointer;
+                opacity: 0.6;
+                background-color: lightgray;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .unreadCount {
+                margin-left: 180px;
+                font-weight:normal;
+            }         
+        </style>
+        <div class="sideBarButton">
+            <slot name="icon"></slot>
+            <span class="text"></span>
+            <span class="unreadCount"></span>
+        </div>
+    </template>
+</body>
+</html>
